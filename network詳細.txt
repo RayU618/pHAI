@@ -1,0 +1,12 @@
+epochs = 250
+lr = 0.01
+momentum = 0.8
+step_size = 2
+gamma = 0.99
+
+@before
+train Loss: 0.3051 Acc: 0.8667
+test Loss: 0.3494 Acc: 0.8804
+
+train Loss: 0.2846 Acc: 0.9077
+test Loss: 0.4311 Acc: 0.8533
