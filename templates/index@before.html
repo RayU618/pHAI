@@ -1,0 +1,40 @@
+&lt;title&gt;Iris Predict App&lt;/title&gt;
+&lt;style&gt;
+#wrapper {
+   text-align: center;
+}
+&lt;/style&gt;
+
+      &lt;div id="wrapper"&gt;
+         {% for message in form.SepalLength.errors %}
+            &lt;div&gt;{{ message }}&lt;/div&gt;
+         {% endfor %}
+
+         {% for message in form.SepalWidth.errors %}
+            &lt;div&gt;{{ message }}&lt;/div&gt;
+         {% endfor %}
+
+         {% for message in form.PetalLength.errors %}
+            &lt;div&gt;{{ message }}&lt;/div&gt;
+         {% endfor %}
+
+         {% for message in form.PetalWidth.errors %}
+            &lt;div&gt;{{ message }}&lt;/div&gt;
+         {% endfor %}
+
+         &lt;form method="post"&gt;
+            {{ form.SepalLength.label }}&lt;br&gt;
+            {{ form.SepalLength }}
+            &lt;br&gt;
+            {{ form.SepalWidth.label }}&lt;br&gt;
+            {{ form.SepalWidth }}
+            &lt;br&gt;
+            {{ form.PetalLength.label }}&lt;br&gt;
+            {{ form.PetalLength }}
+            &lt;br&gt;
+            {{ form.PetalWidth.label }}&lt;br&gt;
+            {{ form.PetalWidth }}
+            &lt;br&gt;
+            {{ form.submit }}
+         &lt;/form&gt;
+      &lt;/div&gt;
